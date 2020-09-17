@@ -1,8 +1,37 @@
 <html>
+
 <head>
-<title>Hardeek Sharma</title>
+  <title>Hardeek Sharma</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <center><h1>Some thing awesome is under development</h1></center>
+  <div id="app" style="color: white;font-size: 120px;width: 50%;"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <script>
+    var app = document.getElementById('app');
+    var typewriter = new Typewriter(app, {
+      loop: true
+    });
+    typewriter.typeString('Hello World!')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('I am Hardeek Sharma!')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('Thank you for visiting my profile.')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('This profile is under development.')
+      .pauseFor(1000)
+      .deleteAll()
+      .pauseFor(2500)
+      .start();
+  </script>
 </body>
+
 </html>
